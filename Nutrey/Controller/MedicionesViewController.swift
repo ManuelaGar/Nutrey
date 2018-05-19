@@ -9,8 +9,9 @@
 import UIKit
 import SceneKit
 import ARKit
+import SVProgressHUD
 
-class ViewController: UIViewController, ARSCNViewDelegate {
+class MedicionesViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     

@@ -18,6 +18,7 @@
 		321EAFBD20B07A4C00C8DE35 /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321EAFBC20B07A4C00C8DE35 /* IniciarSesionViewController.swift */; };
 		321EAFBF20B07A5800C8DE35 /* FormularioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321EAFBE20B07A5800C8DE35 /* FormularioViewController.swift */; };
 		321EAFC120B07C3600C8DE35 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 321EAFC020B07C3600C8DE35 /* GoogleService-Info-2.plist */; };
+		8B6142C5E7D9ED9A979A834E /* Pods_Nutrey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42389FFCB22C5932F20CE0D /* Pods_Nutrey.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,9 @@
 		321EAFBC20B07A4C00C8DE35 /* IniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionViewController.swift; sourceTree = "<group>"; };
 		321EAFBE20B07A5800C8DE35 /* FormularioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioViewController.swift; sourceTree = "<group>"; };
 		321EAFC020B07C3600C8DE35 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		A42389FFCB22C5932F20CE0D /* Pods_Nutrey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nutrey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D586E608DF21C9C8A51370BA /* Pods-Nutrey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nutrey.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nutrey/Pods-Nutrey.release.xcconfig"; sourceTree = "<group>"; };
+		FCEC846B45FBFD19B2FD6E43 /* Pods-Nutrey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nutrey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nutrey/Pods-Nutrey.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B6142C5E7D9ED9A979A834E /* Pods_Nutrey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30F8092168F206579CE63E8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A42389FFCB22C5932F20CE0D /* Pods_Nutrey.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		321EAF9820B0670A00C8DE35 = {
 			isa = PBXGroup;
 			children = (
 				321EAFA320B0670C00C8DE35 /* Nutrey */,
 				321EAFA220B0670C00C8DE35 /* Products */,
+				644684CD5C575C9670E4C9DD /* Pods */,
+				30F8092168F206579CE63E8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,18 +83,43 @@
 			children = (
 				321EAFA420B0670C00C8DE35 /* AppDelegate.swift */,
 				321EAFA620B0670D00C8DE35 /* art.scnassets */,
-				321EAFAA20B0670E00C8DE35 /* Main.storyboard */,
+				321EAFC320B07CB700C8DE35 /* View */,
+				321EAFC220B07C8700C8DE35 /* Controller */,
+				321EAFAD20B0671E00C8DE35 /* Assets.xcassets */,
+				321EAFB220B0671E00C8DE35 /* Info.plist */,
+				321EAFC020B07C3600C8DE35 /* GoogleService-Info-2.plist */,
+			);
+			path = Nutrey;
+			sourceTree = "<group>";
+		};
+		321EAFC220B07C8700C8DE35 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				321EAFB820B07A0A00C8DE35 /* InicioViewController.swift */,
 				321EAFBA20B07A3A00C8DE35 /* RegistroViewController.swift */,
 				321EAFBC20B07A4C00C8DE35 /* IniciarSesionViewController.swift */,
 				321EAFBE20B07A5800C8DE35 /* FormularioViewController.swift */,
 				321EAFA820B0670E00C8DE35 /* MedicionesViewController.swift */,
-				321EAFAD20B0671E00C8DE35 /* Assets.xcassets */,
-				321EAFAF20B0671E00C8DE35 /* LaunchScreen.storyboard */,
-				321EAFB220B0671E00C8DE35 /* Info.plist */,
-				321EAFC020B07C3600C8DE35 /* GoogleService-Info-2.plist */,
 			);
-			path = Nutrey;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		321EAFC320B07CB700C8DE35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				321EAFAA20B0670E00C8DE35 /* Main.storyboard */,
+				321EAFAF20B0671E00C8DE35 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		644684CD5C575C9670E4C9DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCEC846B45FBFD19B2FD6E43 /* Pods-Nutrey.debug.xcconfig */,
+				D586E608DF21C9C8A51370BA /* Pods-Nutrey.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 321EAFB520B0671E00C8DE35 /* Build configuration list for PBXNativeTarget "Nutrey" */;
 			buildPhases = (
+				F9851F1D273A500F4DD92054 /* [CP] Check Pods Manifest.lock */,
 				321EAF9D20B0670B00C8DE35 /* Sources */,
 				321EAF9E20B0670B00C8DE35 /* Frameworks */,
 				321EAF9F20B0670B00C8DE35 /* Resources */,
+				72666C65D3BD7C4BA7C25DB5 /* [CP] Embed Pods Frameworks */,
+				3E9723948BAF9961E1E8774A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +192,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E9723948BAF9961E1E8774A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nutrey/Pods-Nutrey-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72666C65D3BD7C4BA7C25DB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Nutrey/Pods-Nutrey-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nutrey/Pods-Nutrey-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9851F1D273A500F4DD92054 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nutrey-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		321EAF9D20B0670B00C8DE35 /* Sources */ = {
@@ -237,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -291,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -302,11 +409,13 @@
 		};
 		321EAFB620B0671E00C8DE35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCEC846B45FBFD19B2FD6E43 /* Pods-Nutrey.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y8E5YT8AUH;
 				INFOPLIST_FILE = Nutrey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,11 +429,13 @@
 		};
 		321EAFB720B0671E00C8DE35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D586E608DF21C9C8A51370BA /* Pods-Nutrey.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y8E5YT8AUH;
 				INFOPLIST_FILE = Nutrey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

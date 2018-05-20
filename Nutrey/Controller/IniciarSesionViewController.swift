@@ -34,7 +34,7 @@ class IniciarSesionViewController: UIViewController {
                 print(error!)
             } else {
                 print("Inicio de sesion exitosa")
-                self.performSegue(withIdentifier: "goToMediciones", sender: self)
+                self.performSegue(withIdentifier: "goToFormulario2", sender: self)
             }
         }
     }

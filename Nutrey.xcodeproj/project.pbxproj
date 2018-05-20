@@ -81,7 +81,6 @@
 		321EAFA320B0670C00C8DE35 /* Nutrey */ = {
 			isa = PBXGroup;
 			children = (
-				321EAFA420B0670C00C8DE35 /* AppDelegate.swift */,
 				321EAFA620B0670D00C8DE35 /* art.scnassets */,
 				321EAFC320B07CB700C8DE35 /* View */,
 				321EAFC220B07C8700C8DE35 /* Controller */,
@@ -95,6 +94,7 @@
 		321EAFC220B07C8700C8DE35 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				321EAFA420B0670C00C8DE35 /* AppDelegate.swift */,
 				321EAFB820B07A0A00C8DE35 /* InicioViewController.swift */,
 				321EAFBA20B07A3A00C8DE35 /* RegistroViewController.swift */,
 				321EAFBC20B07A4C00C8DE35 /* IniciarSesionViewController.swift */,

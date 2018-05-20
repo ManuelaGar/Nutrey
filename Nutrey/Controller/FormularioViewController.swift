@@ -36,5 +36,14 @@ class FormularioViewController: UIViewController {
         
     }
     
-
+    @IBAction func salirPressed(_ sender: AnyObject) {
+        do {
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
+        }
+        catch {
+            print("Error, hubo un problema al salir.")
+        }
+    }
+    
 }

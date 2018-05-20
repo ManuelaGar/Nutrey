@@ -10,6 +10,7 @@ import UIKit
 import SceneKit
 import ARKit
 import SVProgressHUD
+import Firebase
 
 class MedicionesViewController: UIViewController, ARSCNViewDelegate {
 
@@ -78,4 +79,20 @@ class MedicionesViewController: UIViewController, ARSCNViewDelegate {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
     }
+    
+    @IBAction func listoPressed(_ sender: Any) {
+        
+    }
+    
+    @IBAction func salirPressed(_ sender: AnyObject) {
+        do {
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
+        }
+        catch {
+            print("Error, hubo un problema al salir.")
+        }
+    }
+    
+    
 }

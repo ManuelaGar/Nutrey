@@ -29,7 +29,14 @@ class IniciarSesionViewController: UIViewController {
 
     @IBAction func iniciarSesionPressed(_ sender: AnyObject) {
         SVProgressHUD.show()
-        
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+            if error != nil {
+                print(error!)
+            } else {
+                print("Inicio de sesion exitosa")
+                self.performSegue(withIdentifier: "goToMediciones", sender: self)
+            }
+        }
     }
     
 

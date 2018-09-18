@@ -10,7 +10,6 @@
 		3204F9AA20B1972A00D07301 /* Formulario2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3204F9A920B1972A00D07301 /* Formulario2ViewController.swift */; };
 		321EAFA520B0670C00C8DE35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321EAFA420B0670C00C8DE35 /* AppDelegate.swift */; };
 		321EAFA720B0670D00C8DE35 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 321EAFA620B0670D00C8DE35 /* art.scnassets */; };
-		321EAFA920B0670E00C8DE35 /* MedicionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321EAFA820B0670E00C8DE35 /* MedicionesViewController.swift */; };
 		321EAFAC20B0670E00C8DE35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 321EAFAA20B0670E00C8DE35 /* Main.storyboard */; };
 		321EAFAE20B0671E00C8DE35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 321EAFAD20B0671E00C8DE35 /* Assets.xcassets */; };
 		321EAFB120B0671E00C8DE35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 321EAFAF20B0671E00C8DE35 /* LaunchScreen.storyboard */; };
@@ -27,7 +26,6 @@
 		321EAFA120B0670C00C8DE35 /* Nutrey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nutrey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		321EAFA420B0670C00C8DE35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		321EAFA620B0670D00C8DE35 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		321EAFA820B0670E00C8DE35 /* MedicionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicionesViewController.swift; sourceTree = "<group>"; };
 		321EAFAB20B0670E00C8DE35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		321EAFAD20B0671E00C8DE35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		321EAFB020B0671E00C8DE35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 				321EAFBE20B07A5800C8DE35 /* FormularioViewController.swift */,
 				321EAFBC20B07A4C00C8DE35 /* IniciarSesionViewController.swift */,
 				3204F9A920B1972A00D07301 /* Formulario2ViewController.swift */,
-				321EAFA820B0670E00C8DE35 /* MedicionesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				321EAFA920B0670E00C8DE35 /* MedicionesViewController.swift in Sources */,
 				321EAFBB20B07A3A00C8DE35 /* RegistroViewController.swift in Sources */,
 				321EAFBF20B07A5800C8DE35 /* FormularioViewController.swift in Sources */,
 				321EAFBD20B07A4C00C8DE35 /* IniciarSesionViewController.swift in Sources */,
